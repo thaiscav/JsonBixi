@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TP1 - BIXI</title>
+	
+		<script type="text/javascript" src="scripts/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		
+		<!-- API Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+		
+		<!-- API JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	    <!-- API Google Maps -->
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQlkTfeB9vx0043eNvIIQU4TkCr5RubCc&callback=getMap" async defer></script>
+	    
+</head>
+
+	<body>
+		<header>
+		
+		<img src="images/2000px-Bixi_logo.svg.png" alt="logo_bixi">
+			<nav>
+
+					<button id="navMap" onclick="getMap()">Map</button>
+					<button id="navTable" onclick="getTable()">Table</button>
+
+			</nav>	
+		</header>		
+
+		<div id="title">
+			<h1>Station Map :</h1>	
+		</div>
+		
+		<div id="map" id="iw-container">
+		</div>
+
+		<div id="subtitle">
+			<img class="icon" src="images/iconBixi.png" alt="logo_bixi">
+			<h3>Station avec vélo</h3>
+			<img class="icon" src="images/iconEmpty.png" alt="logo_bixi">
+			<h3>Station sans vélo</h3>	
+		</div>
+					
+		<footer>	
+			<p>site créé par Thais Cavalcanti et Sèdo Serge</p>
+		</footer>
+
+</body>
+</html>
